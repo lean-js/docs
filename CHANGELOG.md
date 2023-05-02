@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v0.0.2
+
+[compare changes](https://github.com/lean-js/docs/compare/v0.0.1...v0.0.2)
+
+
+### 🩹 Fixes
+
+  - Switch to npm due to missing pnpm support in cloudflare. ([9562dd3](https://github.com/lean-js/docs/commit/9562dd3))
+
+### ❤️  Contributors
+
+- Micha Buchholz ([@lean-dev](http://github.com/lean-dev))
+
 ## v0.0.1
 
 
