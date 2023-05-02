@@ -9,15 +9,33 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' },
+      {
+        text: 'OOP',
+        items: [
+          { text: 'Einführung', link: '/oop/' },
+          { text: 'Literale Objekte', link: '/oop/literal-objects' },
+          { text: 'Der Prototyp', link: '/oop/the-prototype' },
+          { text: 'Der Konstruktor', link: '/oop/the-constructor' },
+          { text: 'Vererbung', link: '/oop/inheritance' },
+          { text: 'Properties', link: '/oop/properties' },
+          { text: 'ES 2015+', link: '/oop/es-next' },
+          { text: 'Statische Member', link: '/oop/static-members' },
+        ],
+      },
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'OOP',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' },
+          { text: 'Einführung', link: '/oop/' },
+          { text: 'Literale Objekte', link: '/oop/literal-objects' },
+          { text: 'Der Prototyp', link: '/oop/the-prototype' },
+          { text: 'Der Konstruktor', link: '/oop/the-constructor' },
+          { text: 'Vererbung', link: '/oop/inheritance' },
+          { text: 'Properties', link: '/oop/properties' },
+          { text: 'ES 2015+', link: '/oop/es-next' },
+          { text: 'Statische Member', link: '/oop/static-members' },
         ],
       },
     ],
