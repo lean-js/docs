@@ -1,10 +1,17 @@
 {
+  "name": "docs",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lean-js/docs.git"
+  },
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
     "preview": "vitepress preview docs"
   },
   "devDependencies": {
+    "changelogen": "^0.5.3",
     "vitepress": "1.0.0-alpha.75",
     "vue": "^3.2.47"
   }
