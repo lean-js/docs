@@ -5,20 +5,20 @@ layout: home
 hero:
   name: 'JavaScript Docs'
   text: 'Schulungsmaterial'
-  tagline: My great project tagline
+  tagline: Learn JavaScript a Lean Way
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Grundlagen
+      link: /basics
+    - theme: brand
+      text: OOP
+      link: /oop
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Grundlagen
+    details: Aktuelles JavaScript mit Best Practices
+  - title: OOP
+    details: Die Entwicklung der OOP in JavaScript von ES 5 bis ES 2022
+  - title: ECMAScript Evolution
+    details: Relevante Features der Jahre 2015 bis 2022
 ---
