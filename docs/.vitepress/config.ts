@@ -5,6 +5,7 @@ export default defineConfig({
   title: 'JavaScript Docs',
   description: 'Schulungsmaterial',
   themeConfig: {
+    logo: '/img/logo.png',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
@@ -21,6 +22,6 @@ export default defineConfig({
       },
     ],
 
-    socialLinks: [{ icon: 'github', link: 'https://github.com/vuejs/vitepress' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/lean-js/docs' }],
   },
 });
