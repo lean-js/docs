@@ -9,10 +9,10 @@ hero:
   actions:
     - theme: brand
       text: Grundlagen
-      link: /basics
+      link: /basics/
     - theme: brand
       text: OOP
-      link: /oop
+      link: /oop/
 
 features:
   - title: Grundlagen
