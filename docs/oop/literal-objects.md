@@ -25,14 +25,16 @@ vorher eine Abstraktion zu machen (mit einer Klasse).
 Korrekterweise sollte ich natürlich anmerken, dass obige Methoden-Schreibweise/-Syntax
 schon ECMAScript 2015 ist. In purem ES 5 hätte der Code wie folgt ausgesehen:
 
-```js{4,7}
+```js
 const konto1 = {
   nr: 1001,
   stand: 0,
-  einzahlen: function (betrag) {
+  einzahlen(betrag) {             // [!code --]
+  einzahlen: function (betrag) {  // [!code ++]
     this.stand += betrag;
   },
-  auszahlen: function (betrag) {
+  auszahlen(betrag) {             // [!code --]
+  auszahlen: function (betrag) {  // [!code ++]
     if (betrag > this.stand) {
       return false;
     }
