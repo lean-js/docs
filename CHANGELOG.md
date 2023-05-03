@@ -1,6 +1,28 @@
 # Changelog
 
 
+## v0.2.0
+
+[compare changes](https://github.com/lean-js/docs/compare/v0.1.0...v0.2.0)
+
+
+### 🚀 Enhancements
+
+  - Add basics section. ([29717da](https://github.com/lean-js/docs/commit/29717da))
+
+### 🩹 Fixes
+
+  - Change markdown formatter ([876e893](https://github.com/lean-js/docs/commit/876e893))
+  - Highlight diff ([453e38d](https://github.com/lean-js/docs/commit/453e38d))
+
+### 💅 Refactors
+
+  - Configure shiki themes ([3ac9dd1](https://github.com/lean-js/docs/commit/3ac9dd1))
+
+### ❤️  Contributors
+
+- Micha Buchholz ([@lean-dev](http://github.com/lean-dev))
+
 ## v0.1.0
 
 [compare changes](https://github.com/lean-js/docs/compare/v0.0.2...v0.1.0)
