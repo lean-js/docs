@@ -16,6 +16,16 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       {
+        text: 'Basics',
+        items: [
+          { text: 'Einführung', link: '/basics/' },
+          { text: 'Typ System', link: '/basics/types' },
+          { text: 'Syntax', link: '/basics/syntax' },
+          { text: 'Funktionen', link: '/basics/functions' },
+          { text: 'Objekte', link: '/basics/objects' },
+        ],
+      },
+      {
         text: 'OOP',
         items: [
           { text: 'Einführung', link: '/oop/' },
@@ -32,7 +42,19 @@ export default defineConfig({
 
     sidebar: [
       {
+        text: 'Basics',
+        collapsed: true,
+        items: [
+          { text: 'Einführung', link: '/basics/' },
+          { text: 'Typ System', link: '/basics/types' },
+          { text: 'Syntax', link: '/basics/syntax' },
+          { text: 'Funktionen', link: '/basics/functions' },
+          { text: 'Objekte', link: '/basics/objects' },
+        ],
+      },
+      {
         text: 'OOP',
+        collapsed: true,
         items: [
           { text: 'Einführung', link: '/oop/' },
           { text: 'Literale Objekte', link: '/oop/literal-objects' },
