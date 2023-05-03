@@ -4,6 +4,12 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   title: 'JavaScript Docs',
   description: 'Schulungsmaterial',
+  markdown: {
+    theme: {
+      light: 'vitesse-light',
+      dark: 'vitesse-dark',
+    },
+  },
   themeConfig: {
     logo: '/img/logo.png',
     // https://vitepress.dev/reference/default-theme-config
