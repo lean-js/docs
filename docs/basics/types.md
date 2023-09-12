@@ -37,7 +37,7 @@ Der `typeof`-Operator wird eingesetzt um den jeweiligen Datentyp zu visualisiere
 
 #### Number
 
-In JavaScript gibt es beim Zahl-Typ `number` keine Unterscheidung zwischen Ganzzahlen und Fließkommazahlen. Eine Zahl ist eine Zahl. Etwas technischer betrachtet gibt es in JavaScript keinen Ganzzahl-Typ, sondern der Typ `number` entspricht dem 64-bit Format IEEE 754 in doppelter Genauigkeit (siehe hier im [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) oder in der [ECMAScript Spezifikation](https://tc39.es/ecma262/#sec-ecmascript-language-types-number-type) - etwas lesbarer in der [annotierten ECMAScript 5 Spezifikation](https://es5.github.io/#x8.5)).
+In JavaScript gibt es beim Zahl-Typ `number` keine Unterscheidung zwischen Ganzzahlen und Fließkommazahlen. Eine Zahl ist eine Zahl. Etwas technischer betrachtet entspricht der Typ `number` dem 64-bit Format IEEE 754 in doppelter Genauigkeit (siehe hier im [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) oder in der [ECMAScript Spezifikation](https://tc39.es/ecma262/#sec-ecmascript-language-types-number-type) - etwas lesbarer in der [annotierten ECMAScript 5 Spezifikation](https://es5.github.io/#x8.5)).
 
 Literale können dezimal, binär, oktal, hexadezimal und exponential dargestellt werden.
 
@@ -128,7 +128,9 @@ console.log((3.2489).toPrecision(3));
 ## Objekt Typen
 
 Alle Daten, die keine primitiven Daten sind (also keinen primitiven Typ haben), sind von einem Objekt-Typ.
-Objekte sind veränderlich (***mutable***) und werden an Funktionen mit einer Referenz (Verweis) übergeben. Die bekanntesten vordefinierten Objekt-Typen sind ```Object```, ```Array``` und ```Function```.
+Objekte sind veränderlich (***mutable***) und werden an Funktionen mit einer Referenz (Verweis) übergeben.
+Die bekanntesten vordefinierten Objekt-Typen sind `Date`, `Array` und `Function`. Der `typeof`-Operator
+liefert aber immer `object` (mit Ausnahme der Funktionen: `function`).
 
 ### Objects
 
@@ -163,7 +165,7 @@ person['age'] = 51;
 
 ### Arrays
 
-Arrays in JavaScript sind ein Untertyp von `Object` mit einer speziellen Behandlung für Keys die Ganzzahlen entsprechen.
+Arrays in JavaScript sind Objekte mit einer speziellen Behandlung für Keys die Ganzzahlen entsprechen.
 
 #### Literale Defintion
 
@@ -223,6 +225,9 @@ console.log(sub(17, 4));
 ```js
 const doubleValue = (z) => z * 2;
 console.log(doubleValue(21));
+const tripleValue = z => z * 3;
+const add = (a,b) => a+b;
+const sayHello = () => console.log('Hello');
 ```
 
 #### Übergabe an andere Funktion
@@ -261,6 +266,13 @@ console.log(returned);
 ```js
 const person = { firstname: 'Thomas' };
 console.log(person.lastname);
+```
+
+* Unbesetzte Array-Indizes
+
+```js
+const values = [];
+console.log(values[5]);
 ```
 
 ### Null

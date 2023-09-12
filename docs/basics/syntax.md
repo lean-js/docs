@@ -97,6 +97,8 @@ Sinnvoller ist mehrzeiliger Kommentar vor der Definition von Funktionen und Klas
  *
  * @param {number} a - First operand.
  * @param {number} b - Second operand.
+ *
+ * @returns {number} - Sum of both operands.
  */
 function add(a, b) {
     return a+b;
@@ -189,7 +191,7 @@ const groesserAls = 17 > 4; // true
 const logischesUnd = true && false; // false
 ```
 
-> Zu den logischen Operatoren gibt es einen Unterabschnitt [Syntax/Logische Operatoren](../syntax/logical-operators.md).
+> Zu den logischen Operatoren gibt es einen Unterabschnitt [Syntax/Logische Operatoren](./syntax#logical-operators).
 
 Zeichenketten-Verknüpfungen werden ebenfalls mit dem `+` Operator durchgeführt.
 
@@ -209,8 +211,8 @@ console.log('17' * 4);
 
 Um die Gleichheit von zwei Werten zu überprüfen, existieren in JavaScript zwei(!) Operatoren:
 
-* `===`: strikte, typsicherer Gleichheit mit drei Gleichheitszeichen
-* `==`: lockere bzw. abstrakte Gleicheit mit Typ-Erzwingung
+* `===`: strikte, typsichere Gleichheit mit drei Gleichheitszeichen
+* `==`: lockere bzw. abstrakte Gleicheit mit Typ-Umwandlungen ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Equality))
 
 ### Strict Equality
 
@@ -243,7 +245,7 @@ console.log(null == false);         // false
 console.log(undefined == false);    // false
 ```
 
-## Logische Operatoren
+## Logische Operatoren {#logical-operators}
 
 ### Binäre Logik
 
@@ -284,6 +286,14 @@ console.log(!'hello')
 console.log([] == false)
 console.log(![])
 ```
+
+::: info
+Die doppelte Negation wird manchmal ideomatisch eingesetzt, um einen Wert nach `boolean` zu konvertieren:
+```js
+const value = ...;
+const booleValue = !!value;
+```
+:::
 
 #### Logisches Und
 

@@ -29,9 +29,12 @@ Der Sprachkern und die eingebauten Objekte werden von der Normierungsorganisatio
 Ecma International und der dort angesiedelten Arbeitsgruppe TC39 gepflegt. Unter
 dem Standard ECMA-262 wird die Sprache ECMAScript standardisiert. Alle heutigen
 Implementierungen von JavaScript folgen diesem Standard. Die erste Version wurde
-im Jahr 1997 veröffentlicht.
+im Jahr 1997 veröffentlicht. Jährlich im Juni wird eine neue Version veröffentlicht,
+die aktuelle (und auch alle vorherigen) Spezifikationen findet man bei der
+[ECMA](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/).
 
 ### W3C: APIs
 
 Das World Wide Web - Consortium standardisiert die Browser-Schnittstellen - also
-insbesondere das DOM (Document Object Model) sowie diverse APIs.
+insbesondere das DOM (Document Object Model) sowie diverse APIs. Homepage des Projektes
+ist [w3.org](https://www.w3.org/).

@@ -16,7 +16,7 @@ function doubleValue(z) {
 }
 ```
 
-### Funktions-Ausdruck
+### Funktions-Ausdruck / Anonyme Funktion
 
 ```js
 const tripleValue = function (z) {
@@ -51,7 +51,7 @@ myFunction('hello'); // "hello", "world", undefined
 
 ### Variable Argumente-Liste / Argumente-Array
 
-Wir können alle übergebenen Argumente in einem Array konsumieren mit der **_rest_**-Syntax `...`:
+Wir können alle übergebenen Argumente  mit der **_rest_**-Syntax `...` in einem Array konsumieren:
 
 Zudem verfügen Funktionen, die über das `function`-Schlüsselwort definiert werden, auch über ein `arguments`-Objekt im Scope.
 
@@ -151,8 +151,6 @@ Eine Closure wird erzeugt, wenn in JavaScript eine innere Funktion erstellt wird
 ### Problem-Beschreibung
 
 Es soll eine Funktion entwickelt werden, die eine variable Anzahl von `number` - Argumenten entgegennimmt und deren Summe zurück gibt.
-
-### Lösungen
 
 #### ES5 - Legacy Way
 
