@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v0.2.1
+
+[compare changes](https://github.com/lean-js/docs/compare/v0.2.0...v0.2.1)
+
+### 🏡 Chore
+
+- **dx:** Remove dependency to changelogen. ([2eb4782](https://github.com/lean-js/docs/commit/2eb4782))
+- Upgrade vitepress and vue. ([1d81c8b](https://github.com/lean-js/docs/commit/1d81c8b))
+
+### ❤️ Contributors
+
+- Micha Buchholz ([@lean-dev](http://github.com/lean-dev))
+
 ## v0.2.0
 
 [compare changes](https://github.com/lean-js/docs/compare/v0.1.0...v0.2.0)
