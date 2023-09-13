@@ -105,7 +105,7 @@ function add(a, b) {
 }
 ```
 
-## Variablen
+## Variablen {#variables}
 
 ### Deklaration
 
@@ -207,7 +207,7 @@ console.log('17' + 4);
 console.log('17' * 4);
 ```
 
-## Gleichheit
+## Gleichheit {#equality}
 
 Um die Gleichheit von zwei Werten zu überprüfen, existieren in JavaScript zwei(!) Operatoren:
 

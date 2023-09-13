@@ -32,7 +32,7 @@ const jsIsFun = true;
 console.log(typeof jsIsFun);
 ```
 
-Im kurzen Code-Snippet habe ich Variablen eingeführt bzw. deklariert. Auf dies wird im Abschnitt [Syntax/Variablen](../syntax/variables.md) eingegangen.
+Im kurzen Code-Snippet habe ich Variablen eingeführt bzw. deklariert. Auf dies wird im Abschnitt [Syntax/Variablen](./syntax#variables) eingegangen.
 Der `typeof`-Operator wird eingesetzt um den jeweiligen Datentyp zu visualisieren - in der Praxis natürlich zur Typ-Überprüfung.
 
 #### Number
@@ -338,7 +338,7 @@ printMessage('Hello World!');
 printMessage();
 ```
 
-> Der Vergleichsoperator `===` wird im Abschnitt [Syntax/Gleichheit](../syntax/equality.md) erklärt.
+> Der Vergleichsoperator `===` wird im Abschnitt [Syntax/Gleichheit](./syntax#equality) erklärt.
 
 Verschiedentlich wird auch (mit Bedacht) der logische Oder-Operator eingesetzt:
 
@@ -354,7 +354,7 @@ printMessage('Hello World!');
 printMessage('Hello JavaScript!', { withTimestamp: true });
 ```
 
-> Zu den logischen Operatoren siehe Abschnitt [Syntax/Logik-Operatoren](../syntax/logical-operators.md).
+> Zu den logischen Operatoren siehe Abschnitt [Syntax/Logik-Operatoren](./syntax#logical-operators).
 
 ### Prüfung auf Zahl-Typ
 
