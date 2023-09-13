@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.3.0
+
+[compare changes](https://github.com/lean-js/docs/compare/v0.2.1...v0.3.0)
+
+### 📖 Documentation
+
+- Fixes in the basic docs. ([a82c2ee](https://github.com/lean-js/docs/commit/a82c2ee))
+- Fix three remaining links. ([faef16d](https://github.com/lean-js/docs/commit/faef16d))
+- Remove scaffolded pages. ([cb695bf](https://github.com/lean-js/docs/commit/cb695bf))
+- Clean-up functions topic. ([9c20867](https://github.com/lean-js/docs/commit/9c20867))
+- Add missing empty pages. ([5176eb6](https://github.com/lean-js/docs/commit/5176eb6))
+
+### ❤️ Contributors
+
+- Micha Buchholz ([@lean-dev](http://github.com/lean-dev))
+
 ## v0.2.1
 
 [compare changes](https://github.com/lean-js/docs/compare/v0.2.0...v0.2.1)
