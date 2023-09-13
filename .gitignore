@@ -4,3 +4,6 @@ node_modules/
 # Vitepress
 docs/.vitepress/cache
 docs/.vitepress/dist
+
+# PDF Export
+docs/.vitepress/.temp
