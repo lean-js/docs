@@ -13,6 +13,15 @@ hero:
     - theme: brand
       text: OOP
       link: /oop/
+    - theme: brand
+      text: Fortgeschritten
+      link: /advanced/
+    - theme: brand
+      text: API
+      link: /standard-api/
+    - theme: brand
+      text: Geschichte
+      link: /history/
 
 features:
   - title: Grundlagen
@@ -20,5 +29,5 @@ features:
   - title: OOP
     details: Die Entwicklung der OOP in JavaScript von ES 5 bis ES 2022
   - title: ECMAScript Evolution
-    details: Relevante Features der Jahre 2015 bis 2022
+    details: Relevante Features der Jahre 2015 bis 2023
 ---
