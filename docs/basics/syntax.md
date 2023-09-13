@@ -133,6 +133,15 @@ console.log(typeof tempVar);   // undefined
 console.log(typeof globalVar); // number
 ```
 
+> Siehe dazu auch die Abschnitte [Funktionen/Scope](./functions#scope) und [Advanced/Hoisting](../advanced/hoisting).
+
+::: info
+Als Regel/Richtlinie könnte festgelegt sein:
+1. Variablen/Symbole immer mit `const` definieren
+2. Lockern nach `let`, falls die Variable neu gesetzt werden muss
+3. Niemals `var`
+:::
+
 ### Konstante Objekte und Arrays
 
 Objekte und Arrays, die konstanten Variablen zugewiesen werden, bleiben weiter veränderbar (***mutable***). Konstant ist lediglich die Variable, also der Verweis auf das Objekt bzw. Array.
