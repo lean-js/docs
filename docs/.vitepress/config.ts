@@ -9,6 +9,7 @@ const topics = [
       { text: 'Typ System', link: '/basics/types' },
       { text: 'Syntax', link: '/basics/syntax' },
       { text: 'Funktionen', link: '/basics/functions' },
+      { text: 'Scope', link: '/basics/scope' },
       { text: 'Objekte', link: '/basics/objects' },
     ],
   },

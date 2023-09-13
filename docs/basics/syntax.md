@@ -112,10 +112,10 @@ function add(a, b) {
 Variablen werden mit den Schlüsselwörtern `let` und `const` deklariert.
 
 ```js
-let counter = 0;
+let counter;
 counter = 1;
 
-const maximum = 10;
+const maximum = 10; // must be initialized
 
 // maximum = 100;
 // Neu-Zuweisung, Fehler!
@@ -125,6 +125,7 @@ Vor JavaScript 2015 wurden Variablen ausschließlich mit dem Schlüsselwort `var
 
 ```js
 const bedingung = true;
+
 if (bedingung) {
     let tempVar = 21;   // Scoped to block
     var globalVar = 21; // Not scoped, but global
@@ -133,11 +134,11 @@ console.log(typeof tempVar);   // undefined
 console.log(typeof globalVar); // number
 ```
 
-> Siehe dazu auch die Abschnitte [Funktionen/Scope](./functions#scope) und [Advanced/Hoisting](../advanced/hoisting).
+> Siehe dazu auch die Abschnitte [Basics/Scope](./scope) und [Advanced/Hoisting](../advanced/hoisting).
 
 ::: info
 Als Regel/Richtlinie könnte festgelegt sein:
-1. Variablen/Symbole immer mit `const` definieren
+1. Variablen/Symbole immer mit `const` deklarieren und initialisieren
 2. Lockern nach `let`, falls die Variable neu gesetzt werden muss
 3. Niemals `var`
 :::

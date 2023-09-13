@@ -93,33 +93,7 @@ function noReturnButUndefined() {}
 
 Um mehrere Werte zurückzugeben, müssen diese als Objekt oder Array zurückgebeben werden.
 
-## Scope
 
-Bis zu ECMAScript 5.1 (aus dem Jahr 2011) gab es in JavaScript nur zwei Sichtbarkeitsbereiche:
-*global* und *funktions-lokal* (also **global-scope** und **function-scope**):
-- eine globale Variable wird erzeugt durch
-  1. Definition einer Property auf dem globalen Objekt (`window.variable = 17`)
-  2. Initialisierung einer vorher nicht deklarierten Variable (`variable = 4`)
-  3. Deklaration einer Variablen im globalen Kontext (`var variable = 21`) - also nicht innerhalb
-     einer Funktion.
-- eine lokale Variable, deren Sichtbarkeit sich beschränkft auf eine Funktion, wird erzeugt durch
-  1. Deklaration einer Variablen innerhalb einer Funktion (`var lokal = 42`)
-
-Mit ECMAScript 6 bzw. korrekter ECMAScript 2015 wurden in JavaScript zwei weitere Scopes eingeführt:
-1. Der *Block-Scope* oder auch *lexical-scope*: Variablen/Symbole, die mit dem Schlüsselwort `const`
-   oder `let` deklariert werden, sind nur im jeweiligen lexikalischen Block sichtbar. Das kann jetzt
-   auch ein Anweisungsblock sein.
-2. Der *Module-Scope*: Variablen, die in einem Modul definiert werden (*modul-global*), sind nur
-   in dem Module sichtbar. Damit andere diese Variable konsumieren können, müssen diese vom Modul
-   exportiert werden.
-
-::: info
-Eine Variable ist *sichtbar*, wenn sie im aktuellen Scope oder im *umgebenden* (äußeren) Scope
-sichtbar ist. Das gilt insbesondere für innere Funktionen - siehe unten
-[Funktionen/Innere Funktionen](./functions#inner-functions).
-:::
-
-> Weitere Abschnitte, die sich mit dem Thema Scope beschäftigen, sind [Advanced/Hoisting](../advanced/hoisting), [Advanced/Closures](../advanced/closures) und eben [Advanced/Module](../advanced/modules).
 
 ## High Order Functions
 
