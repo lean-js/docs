@@ -1,6 +1,34 @@
 # Changelog
 
 
+## v0.4.0
+
+[compare changes](https://github.com/lean-js/docs/compare/v0.3.0...v0.4.0)
+
+### 🚀 Enhancements
+
+- Add hoisting topic. ([7b89899](https://github.com/lean-js/docs/commit/7b89899))
+
+### 💅 Refactors
+
+- Extract scope topic. ([4bab281](https://github.com/lean-js/docs/commit/4bab281))
+- Restructuring OOP section. ([7c19918](https://github.com/lean-js/docs/commit/7c19918))
+- Restructure advanced section. ([31c107b](https://github.com/lean-js/docs/commit/31c107b))
+
+### 📖 Documentation
+
+- Add IIFE pattern. ([ae96fcf](https://github.com/lean-js/docs/commit/ae96fcf))
+- Add closure samples. ([0507614](https://github.com/lean-js/docs/commit/0507614))
+- Add this-Section and refine functions. ([e8893bd](https://github.com/lean-js/docs/commit/e8893bd))
+
+### 🏡 Chore
+
+- **dx:** Adding export to pdf plugin. Not working by now. ([8e6a296](https://github.com/lean-js/docs/commit/8e6a296))
+
+### ❤️ Contributors
+
+- Micha Buchholz ([@lean-dev](http://github.com/lean-dev))
+
 ## v0.3.0
 
 [compare changes](https://github.com/lean-js/docs/compare/v0.2.1...v0.3.0)
