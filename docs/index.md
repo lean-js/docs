@@ -18,7 +18,7 @@ hero:
       link: /advanced/
     - theme: brand
       text: API
-      link: /standard-api/
+      link: /standard-api/arrays
     - theme: brand
       text: Geschichte
       link: /history/

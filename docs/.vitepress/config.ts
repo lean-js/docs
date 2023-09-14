@@ -37,17 +37,12 @@ const topics = [
     collapsed: true,
     items: [
       { text: 'Übersicht', link: '/advanced/' },
-      {
-        text: 'Konzepte',
-        items: [
-          { text: 'Hoisting', link: '/advanced/hoisting' },
-          { text: 'Closures', link: '/advanced/closures' },
-          { text: 'Keyword this', link: '/advanced/keyword-this' },
-          { text: 'Modulares JavaScript', link: '/advanced/modules' },
-          { text: 'Asynchronität', link: '/advanced/asynchronous' },
-        ],
-      },
-      { text: 'Patterns', items: [{ text: 'Immutability', link: '/advanced/immutability' }] },
+      { text: 'Hoisting', link: '/advanced/hoisting' },
+      { text: 'Closures', link: '/advanced/closures' },
+      { text: 'Keyword this', link: '/advanced/keyword-this' },
+      { text: 'Modulares JavaScript', link: '/advanced/modules' },
+      { text: 'Asynchronität', link: '/advanced/asynchronous' },
+      { text: 'Destructuring/Spread', link: '/advanced/destructuring-spread' },
     ],
   },
   {
