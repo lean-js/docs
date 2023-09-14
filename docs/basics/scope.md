@@ -86,4 +86,33 @@ Variablen-Deklaration quasi Pflicht und es wurden einige der typischen Fehler un
 Heutzutage sieht man den **Strict Mode** bzw. das Pragma relativ selten, weil dieser in modernem
 JavaScript sowohl in Klassen als auch in Modulen automatisch eingeschaltet ist.
 
+## IIFE Pattern
+
+Zur Vermeidung von globalen Variablen und Funktionen wurde das **IIFE**-Muster eingesetzt. Hier
+wurde jedes Script in eine anonyme Funktion gepackt, die sofort ausgeführt wurde.
+
+::: info
+**IIFE** steht für **I**mmediatly **I**nvoked **F**unction **E**xpression.
+:::
+
+```js
+(function (){
+
+  console.log('Starting point');
+
+  var topic = 'IIFE';           // Not global
+
+  function prettyPrint(msg) {   // Not global
+    console.log(`[${new Date().toLocaleTimeString('de')}] ${msg}`);
+  }
+
+  prettyPrint(topic);
+
+})();
+```
+
+In Kombination mit dem **strict mode** kann so jegliche globale Variable vermieden werden. Der
+*Export* von Variablen/Funktionen für andere Scripte kann zum Beispiel über ein dediziertes globales
+Objekt geschehen ([JavaScript Namespacing](https://addyosmani.com/blog/essential-js-namespacing/)).
+
 > Weitere Abschnitte, die sich mit dem Thema Scope beschäftigen, sind [Advanced/Hoisting](../advanced/hoisting), [Advanced/Closures](../advanced/closures) und eben [Advanced/Module](../advanced/modules).
