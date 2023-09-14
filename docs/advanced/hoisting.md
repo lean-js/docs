@@ -78,7 +78,7 @@ function problematicFn() {
 problematicFn();    // What will be logged to console?
 ```
 
-Dieses Beispiel funktioniert nur, weil mindestens zwei Anti-Patterns der JavaScript-Programmierung
+Dieses Beispiel *funktioniert* nur, weil mindestens zwei Anti-Patterns der JavaScript-Programmierung
 verwendet werden.
 
 1. Die Verwendung von globalen Variablen
