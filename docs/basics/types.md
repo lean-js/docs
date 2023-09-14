@@ -310,7 +310,7 @@ console.log(zahlStr, typeof zahlStr);
 
 ```js
 const zahlwert = '1234';
-const zahl1 = +zahlwert;            // or parseFloat
+const zahl1 = +zahlwert;            // or Number
 const zahl2 = parseInt(zahlwert);   // or parseFloat
 const zahl3 = Number(zahlwert);
 const zahl4 = new Number(zahlwert);
