@@ -206,7 +206,7 @@ const logischesUnd = true && false; // false
 Zeichenketten-Verknüpfungen werden ebenfalls mit dem `+` Operator durchgeführt.
 
 ```js
-const name = 'Thomas' + ' ' + 'Müller';
+let name = 'Thomas' + ' ' + 'Müller';
 name += ' (Fussballspieler)';
 ```
 
