@@ -93,22 +93,23 @@ function noReturnButUndefined() {}
 
 Um mehrere Werte zurückzugeben, müssen diese als Objekt oder Array zurückgebeben werden.
 
+## Funktionen sind Objekte
 
-
-## High Order Functions
-
-Funktionen höherer Ordnung sind Funktionen, die andere Funktionen als Argument bekommen.
+In JavaScript ist jede Funktion auch *nur* ein Objekt.
 
 ```js
-function doSomething(callback) {
-  // ...
+function add(a,b) { return a + b; }
 
-  callback(42);
-}
+console.log(add.length);
+console.log(add.name);
+console.log(add.toString());
+```
 
-doSomething((value) => {
-  console.log('Done', value);
-});
+Insbesondere gibt es sogar einen Funktions-Konstruktor:
+
+```js
+const sub = new Function('x','y','return x+y;');
+console.log(sub(17,4));
 ```
 
 ## Innere Funktionen {#inner-functions}
@@ -127,4 +128,39 @@ function outerFn() {
 }
 
 // Keine der inneren Funktionen ist hier sichtbar
+```
+
+## Funktionen sind First-Class-Citizens
+
+Funktionen in können als Ausdruck überall verwendet werden, wo in JavaScript Ausdrücke
+erlaubt sind. Insobesondere also bei der Zuweisung an Variablen, bei der Übergabe von
+Argumenten an andere Funktionen oder auch als Rückgabe-Wert.
+
+### High Order Functions
+
+Funktionen höherer Ordnung sind Funktionen, die andere Funktionen als Argument bekommen.
+
+```js
+function doSomething(callback) {
+  // ...
+
+  callback(42);
+}
+
+doSomething((value) => {
+  console.log('Done', value);
+});
+```
+
+### Function Factory
+
+Wir können also auch eine Funktion in einer anderen zusammenbauen und zurückgeben.
+
+```js
+function createHider(elt) {
+  function hideElt() {
+    elt.style.display = 'none';
+  }
+  return hideElt;
+}
 ```
