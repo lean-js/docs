@@ -80,6 +80,25 @@ const environment = {
 
 environment.print();
 ```
+## Getter/Setter
+
+In ECMAScript 5 wurde die Getter/Setter-Semantik eingeführt. Diese Syntax existierte also schon vor der
+eleganteren Methodensyntax aus ECMAScript 6 / 2015
+
+```js
+const konto = {
+  _prop: 'I am private';     // Der Unterstrich/Underscore ist nur Kosmetik
+  _password: 'password';
+
+  get prop() { return this._prop; },
+
+  get password() { return this._password; },
+  set password(value) {
+    if (password.length > 0) {
+      this._password = value;
+    }
+  }
+};
 
 ## Cloning
 

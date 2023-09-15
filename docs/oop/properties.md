@@ -1,33 +1,5 @@
 # Properties
 
-## Getter/Setter
-
-In ECMAScript 5 wurde die Getter/Setter-Semantik eingeführt.
-
-```js
-const konto = {
-  nr: 1001,
-  _stand: 0,
-  _dispo: 0,
-
-  get stand() { return this._stand; },
-
-  get dispo() { return this._dispo; },
-  set dispo(value) { this._dispo = value; },
-
-  einzahlen: function (betrag) {
-    this.stand += betrag;
-  },
-  auszahlen: function (betrag) {
-    if (betrag > this.stand + this.dispo) {
-      return false;
-    }
-    this.stand -= betrag;
-    return true;
-  },
-};
-```
-
 ## Property Descriptors
 
 Neben der einfachen *key-value* Zuordnung können Eigenschaften in JavaScript können auch über einen **Property Descriptor** detaillierter beschrieben werden.
