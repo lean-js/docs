@@ -1,6 +1,25 @@
 # Changelog
 
 
+## v0.5.0
+
+[compare changes](https://github.com/lean-js/docs/compare/v0.4.0...v0.5.0)
+
+### 🩹 Fixes
+
+- Wrong function cited. ([4506878](https://github.com/lean-js/docs/commit/4506878))
+- Name is not const. ([a488c62](https://github.com/lean-js/docs/commit/a488c62))
+
+### 📖 Documentation
+
+- Copy legacy content. ([510b8e7](https://github.com/lean-js/docs/commit/510b8e7))
+- Add modularity topic. ([727f3fe](https://github.com/lean-js/docs/commit/727f3fe))
+- Add minimal async topic ([85747a8](https://github.com/lean-js/docs/commit/85747a8))
+
+### ❤️ Contributors
+
+- Micha Buchholz <mail@lean-stack.de>
+
 ## v0.4.0
 
 [compare changes](https://github.com/lean-js/docs/compare/v0.3.0...v0.4.0)
