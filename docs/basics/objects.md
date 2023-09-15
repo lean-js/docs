@@ -99,6 +99,7 @@ const konto = {
     }
   }
 };
+```
 
 ## Cloning
 
